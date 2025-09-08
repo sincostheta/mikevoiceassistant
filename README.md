@@ -1,7 +1,7 @@
 # MIKE - Voice Assistant
 MIKE is an open source AI Voice Assistant and Smart Speaker built using an ESP-32, featuring Perplexity AI Intelligence and Spotify Music Controls.
 
-This repository can be used to make your own MIKE, using the same materials as used before.
+This repository can be used to make your own MIKE, using the same materials as used. It can also be customized to your own needs if you have coding experience
 
 **WIP**
 
