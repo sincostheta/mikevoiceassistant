@@ -7,9 +7,7 @@ MIKE, is a voice assistant built with an ESP32, featuring Perplexity AI Intellig
 
 How to use MIKE properly [REFER TO MIKE AS "IT"]
 
-Materials used [GET EXACT PRICES]
-
-A tutorial to set up MIKE
+Materials used [GET EXACT PRICES] {AYE AYE CAPTAIN}
 
 Finishing the full project
 
@@ -78,7 +76,7 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
 
 ## Technical Specifications
 
-  **Microcontroller**: ESP32 DevKit V1
+  **Microcontroller**: ESP32 DevKit V1   ( ₹449 )
   
   **Wake Word**: "MIKE" (customizable)
   
@@ -90,9 +88,9 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
  
   **Music Service**: Spotify Web API
  
-  **Audio Input**: KY-037 High Sensitivity Microphone
+  **Audio Input**: KY-037 High Sensitivity Microphone   ( ₹85 )
  
-  **Audio Output**: PAM8403 Amplifier + Speaker
+  **Audio Output**: PAM8403 Amplifier + Speaker   ( ₹199 )
  
   **Power Supply**: 5V USB or External 7-12V
  
