@@ -76,22 +76,14 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
 
 ## Technical Specifications
 
-  **Microcontroller**: ESP32 DevKit V1   ( ₹449 )
-  
-  **Wake Word**: "MIKE" (customizable)
-  
-  **Speech Recognition**: Assembly AI Speech-to-Text
- 
-  **Text-to-Speech**: VOICE RSS Text-To-Speech (British Voice)
- 
-  **AI Engine**: Perplexity Sonar Pro API
- 
-  **Music Service**: Spotify Web API
- 
-  **Audio Input**: KY-037 High Sensitivity Microphone   ( ₹85 )
- 
-  **Audio Output**: PAM8403 Amplifier + Speaker   ( ₹199 )
- 
-  **Power Supply**: 5V USB or External 7-12V
- 
-  **Connectivity**: Wi-Fi 802.11 b/g/n
+  | Device | Model |
+  | --- | --- |
+  | Microcontroller | ESP32 DevKit V1 |
+  | Speech Recognition | Assembly AI Speech-to-Text |
+  | Text-to-Speech | Voice RSS Text-to-Speech (British Voice)
+  | AI Engine | Perplexity Pro Sonar API |
+  | Music Service | Spotify Web API
+  | Audio Input | KY-037 High Sensitivity Microphone |
+  | Audio Output | PAM8403 Amplifier + Speaker |
+  | Power Supply | 5V USB or External 7-12V |
+  | Connectivity | Wi-Fi 802.11 b/g/n |
