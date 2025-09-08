@@ -5,8 +5,6 @@ MIKE, is a voice assistant built with an ESP32, featuring Perplexity AI Intellig
 
 **What's left:**
 
-How to use MIKE properly [REFER TO MIKE AS "IT"]
-
 Materials used [GET EXACT PRICES] {AYE AYE CAPTAIN}
 
 Finishing the full project
