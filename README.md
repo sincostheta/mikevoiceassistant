@@ -13,6 +13,14 @@ A tutorial to set up MIKE
 
 Finishing the full project
 
+## HOW TO SET UP MIKE
+   - Turn MIKE on and wait for 30 seconds
+   - Go to the WIFI Menu of your mobile and connect to `MIKE-Setup` with the password `mike123`
+   - It should open a website in your browser, if it doesn't open automatically, go to `192.168.4.1` from your preferred web browser
+   - Enter your wifi name and the wifi password to the given blanks in the website and submit the form
+   - Wait for about a minute to initialize and start using!
+
+
 ## About MIKE
 **Wake Word Activation**: Saying the word "MIKE" activates the assistant. It uses advanced speech recognition to detect your voice and respond with high accuracy.
 
