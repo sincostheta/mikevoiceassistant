@@ -28,6 +28,7 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
 **A few examples:**
 
 > You: "MIKE, play some jazz music"
+>
 > **MIKE**: "Searching for jazz music on Spotify. Now playing smooth jazz playlist on your speaker."
 
 
@@ -37,21 +38,21 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
 
 
 > You: "MIKE, pause the music"
-
+>
 > **MIKE**: "Music paused. Would you like me to resume it later?"
 
 > You: "MIKE, tell me about quantum physics"
-
-> **MIKE**: "Quantum physics is the study of matter and energy at the smallest scales. It reveals how particles behave in ways that seem impossible in our everyday world..."
+>
+>  **MIKE**: "Quantum physics is the study of matter and energy at the smallest scales. It reveals how particles behave in ways that seem impossible in our everyday world..."
 
 
 > You: "MIKE, skip this song"
-
+>
 > **MIKE**: "Skipping to the next track. Now playing a different selection for you."
 
 
 > You: "MIKE, what's happening in the news?"
-
+>
 > **MIKE**: "Here are today's top headlines: Technology sector sees growth, climate summit reaches agreement, and space exploration advances continue..."
 
 
