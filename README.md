@@ -7,7 +7,7 @@ MIKE, is a voice assistant built with an ESP32, featuring Google cloud services,
 **Spotify Music Control**: You can play, pause, skip songs and essentially, have full control over your Spotify experience using MIKE. You can also search for tracks, artists and playlists using voice commands.
 
 **Examples:** 
-> MIKE, play the latest Linkin Park relase.
+> MIKE, play the latest Linkin Park release.
 
 > MIKE, play some liminal music.
 
