@@ -1,6 +1,13 @@
 # MIKE - Voice Assistant
 MIKE, is a voice assistant built with an ESP32, featuring Perplexity AI Intelligence and Spotify music controls.
 
+**WIP**
+**What's left:**
+How to use MIKE properly [REFER TO MIKE AS "IT"]
+Materials used [GET EXACT PRICES]
+A tutorial to set up MIKE
+Finishing the full project
+
 ## About MIKE
 **Wake Word Activation**: Saying the word "MIKE" activates the assistant. It uses advanced speech recognition to detect your voice and respond with high accuracy.
 
