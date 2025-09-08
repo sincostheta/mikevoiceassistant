@@ -1,6 +1,8 @@
 # MIKE - Voice Assistant
 MIKE, is a voice assistant built with an ESP32, featuring Perplexity AI Intelligence and Spotify music controls.
 
+This repository can be used to make your own MIKE, using the same materials as used before.
+
 **WIP**
 
 **What's left:**
@@ -69,6 +71,13 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
    - It should open a website in your browser, if it doesn't open automatically, go to `192.168.4.1` from your preferred web browser
    - Enter your wifi name and the wifi password to the given blanks in the website and submit the form
    - Wait for about a minute to initialize and start using!
+
+## How to use MIKE properly
+   - Use the wake word "MIKE" for it to respond to you (can be customized)
+   - Speak clearly and at a normal pace for better recognition
+   - Wait for the blue LED to light up before issuing a command
+   - Keep MIKE within 1 metre radius for optimal voice pickup
+   - Keep MIKE in quiet environments with minimal background noise
 
 ## Technical Specifications
 
