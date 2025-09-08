@@ -57,9 +57,9 @@ You: "MIKE, what's happening in the news?"
   
   **Wake Word**: "MIKE" (customizable)
   
-  **Speech Recognition**: Google Cloud Speech-to-Text
+  **Speech Recognition**: Assembly AI Speech-to-Text
  
-  **Text-to-Speech**: Google Cloud TTS (British Voice)
+  **Text-to-Speech**: VOICE RSS Text-To-Speech (British Voice)
  
   **AI Engine**: Perplexity Sonar Pro API
  
