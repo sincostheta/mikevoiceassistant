@@ -63,7 +63,7 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
 >
 > **MIKE**: "Here are today's top headlines: Technology sector sees growth, climate summit reaches agreement, and space exploration advances continue..."
 
-## HOW TO SET UP MIKE
+## How to Set Up Mike
    - Turn MIKE on and wait for 30 seconds
    - Go to the WIFI Menu of your mobile and connect to `MIKE-Setup` with the password `mike123`
    - It should open a website in your browser, if it doesn't open automatically, go to `192.168.4.1` from your preferred web browser
