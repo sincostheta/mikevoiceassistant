@@ -28,12 +28,10 @@ MIKE is your intelligent AI companion that responds to voice commands, controls 
 **A few examples:**
 
 > You: "MIKE, play some jazz music"
-
 > **MIKE**: "Searching for jazz music on Spotify. Now playing smooth jazz playlist on your speaker."
 
 
 > You: "MIKE, what's the weather like today?"
-
 > **MIKE**: "Today in your area, it's partly cloudy with a high of 28°C and a low of 22°C. Perfect weather for outdoor activities."
 
 
