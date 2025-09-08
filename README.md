@@ -27,12 +27,21 @@ MIKE has an efficient ESP32 architecture with built-in DAC for audio output and 
 ## Technical Specifications
 
   **Microcontroller**: ESP32 DevKit V1
+  
   **Wake Word**: "MIKE" (customizable)
+  
   **Speech Recognition**: Google Cloud Speech-to-Text
+ 
   **Text-to-Speech**: Google Cloud TTS (British Voice)
+ 
   **AI Engine**: Perplexity Sonar Pro API
+ 
   **Music Service**: Spotify Web API
+ 
   **Audio Input**: KY-037 High Sensitivity Microphone
+ 
   **Audio Output**: PAM8403 Amplifier + Speaker
+ 
   **Power Supply**: 5V USB or External 7-12V
+ 
   **Connectivity**: Wi-Fi 802.11 b/g/n
