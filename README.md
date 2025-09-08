@@ -9,8 +9,10 @@ Saying the word "MIKE" activates the assistant. It uses advanced speech recognit
 You can play, pause, skip songs and essentially, have full control over your Spotify experience using MIKE. You can also search for tracks, artists and playlists using voice commands.
 **Examples:** 
 > MIKE, play the latest Linkin Park relase.
-  MIKE, play some liminal music.
-  MIKE, start the playlist, "Japan Peace".
+
+> MIKE, play some liminal music.
+
+> MIKE, start the playlist, "Japan Peace".
 
 ## Perplexity AI Intellgence
 MIKE is powered by Perplexity's Sonar API for having intelligent conversations, real-time web search, and accurate answers to your questions. 
