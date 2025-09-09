@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKE Voice Assistant - Robotics Project Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html, body { height: 100vh; margin: 0; padding: 0; overflow: hidden; }
+        .section { opacity: 0; transform: translateY(50px); transition: all 1.2s ease-out; }
+        .section.loaded { opacity: 1; transform: translateY(0); }
+        .fade-in-bg { animation: fadeInBg 1.5s ease-out forwards; }
+        @keyframes fadeInBg {
+            from { background-position: 0% 50%; }
+            to { background-position: 100% 50%; }
+        }
+        .pulse-glow { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+            50% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+        }
+    </style>
+</head>
+<body class="bg-blue-900 text-white flex flex-col h-screen font-sans">
+    <!-- Loading Screen -->
+    <div id="loader" class="fixed inset-0 bg-blue-800 z-50 flex items-center justify-center transition-opacity duration-1000">
+    <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4 animate-pulse" style="margin-right: 20px;">Loading MIKE Web</h2>
+    </div>
+  	    <div class="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4 bg-blue-800 shadow-lg">
+        <h1 class="text-2xl font-bold pulse-glow">MIKE Voice Assistant</h1>
+        <nav id="nav" class="hidden md:flex space-x-4">
+            <button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition" data-target="home">Home</button>
+            <button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition" data-target="about">About</button>
+            <button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition" data-target="features">Features</button>
+            <button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition" data-target="guide">Guide</button>
+        </nav>
+        <button id="menuBtn" class="md:hidden bg-blue-600 px-3 py-2 rounded" onclick="toggleMobileNav()">Menu</button>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-1 flex flex-col overflow-y-auto smooth-scroll">
+        <!-- Hero Section -->
+        <section id="home-section" class="section flex-1 flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-700 p-8 relative fade-in-bg">
+            <div class="text-center z-10">
+                <h2 class="text-5xl font-extrabold mb-4">Welcome to the official website of Mike Voice Assistant by Technoforge</h2>
+                <p class="text-xl mb-6">Contributing to Smart City development with AI-Powered Robotics</p>
+            </div>
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8ba5ad94-3c41-407d-868f-553df8c223d1.png" class="absolute inset-0 w-full h-full object-cover opacity-40" />
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="section flex-1 flex items-center justify-center bg-white text-gray-900 p-8">
+            <div class="text-center max-w-4xl">
+                <h3 class="text-3xl font-bold mb-4">About MIKE</h3>
+                <p class="text-lg mb-6">MIKE is an open-source AI-powered voice assistant and smart speaker platform, meticulously engineered around the versatile ESP-32 microcontroller. It integrates advanced Perplexity AI technology to deliver sophisticated natural language understanding and contextual intelligence. Additionally, MIKE offers seamless control over Spotify music playback, enabling users to effortlessly manage their audio experience through intuitive voice commands. Designed for flexibility and extensibility, MIKE serves as a cutting-edge solution for personalized digital assistance.</p>
+                <img src="https://live.staticflickr.com/65535/54774033526_1feccf7ea3_n.jpg" class="w-80 h-60 object-cover rounded-lg shadow-xl mx-auto" />
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features-section" class="section flex-1 flex items-center justify-center bg-gray-100 text-gray-900 p-8">
+            <div class="text-center max-w-6xl">
+                <h3 class="text-3xl font-bold mb-8">Key Features</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hover:-translate-y-2">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f08f5d46-0e66-424a-9e55-5c38dad61563.png" alt="Symbolic icon of a microphone emitting sound waves in blue, indicating advanced voice recognition capabilities" class="w-20 h-20 object-cover mb-4 rounded-full mx-auto" />
+                        <h4 class="text-xl font-semibold mb-2">AI Voice Recognition</h4>
+                        <p>Processes natural language with deep learning for accurate responses.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hover:-translate-y-2">
+                        <img src="https://live.staticflickr.com/65535/54774266613_c2a39f62c3_z.jpg" />
+                        <h4 class="text-xl font-semibold mb-2">Spotify Integration</h4>
+                        <p>Plays songs from Spotify using voice commands.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition hover:-translate-y-2">
+                        <img src="https://live.staticflickr.com/65535/54774334246_a7ac91e653_c.jpg" class="w-20 h-20 object-cover mb-4 rounded-full mx-auto" />
+                        <h4 class="text-xl font-semibold mb-2">Smart City Contributions</h4>
+                        <p>Provides assistance with information whenever needed, while being cost effective.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Section -->
+        <section id="guide-section" class="section flex-1 flex items-justify justify-center bg-blue-900 p-8">
+            <div class="text-justify max-w-4xl">
+                <h3 class="text-3xl font-bold mb-4">How to Set Up MIKE</h3>
+                <ul style="list-style-type:disc;">
+                   <li>Turn MIKE on and wait for 30 seconds.</li>
+                   <li>Go to the WIFI Menu of your device and connect to "MIKE-Setup" with the password "mike123".</li>
+                   <li>It should open a website in your browser, if it doesn't open automatically, go to <b>192.168.4.1</b> from your preferred web browser.</li>
+                   <li>Enter your wifi name and the wifi password to the given blanks in the website and submit the form.</li>
+                   <li>Wait for about a minute to initialize and start using!</li>
+                </ul>
+                <h3 class="text-3xl font-bold mb-4" style="margin-top: 20px;">How to Use MIKE Properly</h3>
+                <ul style="list-style-type:disc;">
+                   <li>Use the wake word "MIKE" for it to respond to you (customizable).</li>
+                   <li>Speak clearly and at a normal pace for better recognition.</li>
+                   <li>Wait for the blue LED to light up before issuing a command.</li>
+                   <li>Keep MIKE within 1 metre radius for optimal voice pickup.</li>
+                   <li>Keep MIKE in quiet environments with minimal background noise.</li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <!-- Footer -->
+        <footer class="bg-blue-800 p-6 text-center">
+            <h4 class="text-xl font-bold mb-2">Contact Technoforge</h4>
+            <p>Contact Emails: <a href="mailto:sayan.das@dpsn.org.in">sayan.das@dpsn.org.in</a>, <a href="mailto:jyotirmoy.basu@dpsn.org.in">jyotirmoy.basu@dpsn.org.in</a> | GitHub: <a href="https://github.com/sincostheta/mikevoiceassistant">MIKE - Voice Assistant</a></p>
+            <p>© 2025 Technoforge. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <!-- Mobile Nav (Hidden by Default) -->
+    <nav id="mobileNav" class="fixed top-0 left-0 w-full bg-blue-800 p-4 hidden">
+        <ul class="flex flex-col space-y-4 text-center">
+            <li><button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition w-full" data-target="home">Home</button></li>
+            <li><button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition w-full" data-target="about">About</button></li>
+            <li><button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition w-full" data-target="features">Features</button></li>
+            <li><button class="nav-btn bg-blue-600 px-4 py-2 rounded hover:bg-blue-500 transition w-full" data-target="guide">Guide</button></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Page Load Transitions
+        let loadedSections = 0;
+        const sections = document.querySelectorAll('.section');
+
+        window.addEventListener('load', () => {
+            // Hide loader after 3 seconds
+            setTimeout(() => {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loader').style.display = 'none';
+                    loadSections();
+                }, 1000);
+            }, 3000);
+        });
+
+        function loadSections() {
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.classList.add('loaded');
+                }, index * 600); // Staggered fade-in
+            });
+        }
+
+        // Smooth Scrolling to Sections
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.getAttribute('data-target') + '-section';
+                document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('mobileNav').classList.add('hidden'); // Close mobile nav
+            });
+        });
+
+        // Activate MIKE Button
+        document.getElementById('activateBtn').addEventListener('click', () => {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance('MIKE activated. Ask me anything.');
+                window.speechSynthesis.speak(utterance);
+            } else {
+                alert('MIKE says: Hello!');
+            }
+            // Add a visual effect
+            document.getElementById('home-section').classList.add('animate-pulse');
+            setTimeout(() => document.getElementById('home-section').classList.remove('animate-pulse'), 1000);
+        });
+
+        // Interactive Demo Functions
+        document.getElementById('voiceCmdBtn').addEventListener('click', () => {
+            const display = document.getElementById('commandDisplay');
+            const box = document.getElementById('interactiveBox');
+            display.textContent = 'Playing your favorite music...';
+            box.classList.add('scale-110', 'bg-blue-50');
+            setTimeout(() => {
+                display.textContent = 'Done! Music is now playing.';
+                box.classList.remove('scale-110', 'bg-blue-50');
+            }, 2000);
+        });
+
+        document.getElementById('lightCmdBtn').addEventListener('click', () => {
+            const display = document.getElementById('commandDisplay');
+            const box = document.getElementById('interactiveBox');
+            display.textContent = 'Turning off lights...';
+            box.classList.add('animate-bounce', 'bg-green-50');
+            setTimeout(() => {
+                display.textContent = 'Lights off! Environment set to sleep mode.';
+                box.classList.remove('animate-bounce', 'bg-green-50');
+            }, 2000);
+        });
+
+        // Toggle Mobile Navigation
+        function toggleMobileNav() {
+            const nav = document.getElementById('mobileNav');
+            nav.classList.toggle('hidden');
+        }
+
+        // Add subtle parallax effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const cursorX = e.clientX / window.innerWidth;
+            const cursorY = e.clientY / window.innerHeight;
+            document.querySelectorAll('img[alt*="robot"]').forEach(img => {
+                img.style.transform = `translate(${cursorX * 10}px, ${cursorY * 10}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
